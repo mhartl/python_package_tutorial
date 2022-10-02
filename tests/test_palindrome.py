@@ -13,8 +13,8 @@ def test_mixed_case_palindrome():
 def test_palindrome_with_punctuation():
     assert Phrase("Madam, I'm Adam.").ispalindrome()
 
-def test_letters():
-    assert Phrase("Madam, I'm Adam.").letters() == "MadamImAdam"
+def test_letters_and_digits():
+    assert Phrase("Madam, I'm Adam.").letters_and_digits() == "MadamImAdam"
 
 def test_integer_non_palindrome():
     assert not Phrase(12345).ispalindrome()

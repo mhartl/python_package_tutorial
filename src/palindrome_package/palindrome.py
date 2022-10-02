@@ -12,10 +12,10 @@ class Phrase:
 
     def processed_content(self):
         """Return content for palindrome testing."""
-        return self.letters().lower()
+        return self.letters_and_digits().lower()
 
-    def letters(self):
-        """Return the letters in the content."""
+    def letters_and_digits(self):
+        """Return the letters and digits in the content."""
         return "".join(re.findall(r"[a-zA-Z\d]", self.content))
 
 def reverse(string):
