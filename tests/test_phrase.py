@@ -1,4 +1,4 @@
-from palindrome_package.palindrome import Phrase
+from palindrome.phrase import Phrase
 from pytest import skip
 
 def test_non_palindrome():
