@@ -21,3 +21,9 @@ def test_integer_non_palindrome():
 
 def test_integer_palindrome():
     assert Phrase(12321).ispalindrome()
+
+def test_empty_string_not_palindrome():
+    assert not Phrase("").ispalindrome()
+
+def test_spaces_string_not_palindrome():
+    assert not Phrase("    ").ispalindrome()

@@ -8,7 +8,11 @@ class Phrase:
 
     def ispalindrome(self):
         """Return True for a palindrome, False otherwise."""
-        return self.processed_content() == reverse(self.processed_content())
+        pc = self.processed_content()
+        if pc:
+            return pc == reverse(pc)
+        else:
+            return False
 
     def processed_content(self):
         """Return content for palindrome testing."""
