@@ -1,5 +1,6 @@
-from palindrome.phrase import Phrase
 from pytest import skip
+
+from palindrome_mhartl.phrase import Phrase
 
 def test_non_palindrome():
     assert not Phrase("apple").ispalindrome()

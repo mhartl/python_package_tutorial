@@ -1,6 +1,22 @@
 [build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "palindrome_mhartl"
+version = "0.0.12"
+authors = [
+  { name="Michael Hartl", email="michael@michaelhartl.com" },
 ]
-build-backend = "setuptools.build_meta"
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mhartl/python_package_tutorial"
+"Bug Tracker" = "https://github.com/mhartl/python_package_tutorial/issues"
